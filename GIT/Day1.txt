@@ -1,0 +1,383 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sk186093 
+LoksaiETA
+/
+dcp-oct15
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+dcp-oct15/Class-Notes/Day1.txt
+@LoksaiETA
+LoksaiETA Create Day1.txt
+Latest commit 617c486 3 minutes ago
+ History
+ 1 contributor
+341 lines (152 sloc)  4.83 KB
+
+####DCP-Oct15
+
+DevOps :::: strategy / process ---> to achieve Continuous Improvement. 
+
+Continuous Interaction!
+
+IT ::
+
+SDLC ???
+
+Requirement Analysis  ------- > Prod Delivery
+
+Requirement Analysis
+Design
+Development / Code 
+Test
+Deployment
+
+Main... 
+
+Waterfall Model ::: Linear Approach.
+
+Monolith Application.
+
+Agile Methodology...
+
+Iteration1,2,3,4,5 
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~
+
+water-fall model ---> Agile ---> DevOps ---> DevSecOps ---> SRE ---> gitOps ---> AIOps
+
+#~~~~~~~~~~~~~~~~~~~~~
+
+Continuous Deployment****
+
+
+DevOps :::
+
+Applications  ... 
+
+
+Telecom ::: 
+
+Telecom service providers...
+
+sp1 -- Introduce new service/plan ...
+
+sp2 -- 
+
+
+Teams involved in SDLC :::
+
+Infra-Structure Team
+Development Team
+Testing
+Release Management Team 
+Security Team
+Monitoring Team
+Support Team
+
+Continuous Development ::: IDE's -- Visual Studio Code, Eclipse based IDE's - GUI Based code development tool.
+
+C/Integration. --> build and create artifacts.(binaries) *.war / *.jar
+
+C/Delivery -- > promoted to next test environments. continuous Testing!
+
+C/Deployment --> Promoted to Production environment.
+
+
+Various Environments ::: 
+
+Non-Prod Environment:
+
+	Developement Environment --- IDE's -- Visual Studio Code, Eclipse based IDE's - GUI Based code development tool.
+	Build Environment  --- Build tools .. build and create artifacts.(binaries) *.war / *.jar
+	Testing Environment --- promoted to next test environments. continuous Testing!
+		QA ---> UAT ---> Pre-Prod/Staging
+
+Prod Environment:
+	Production Environment
+
+
+
+Complete DevOps CI/Cd/CD
+
+
+Code --> Commited in a src code repository
+pick up the code
+perform build
+create artifacts
+delivery / deploy
+
+
+Use Cases :::
+ 
+Sign-up -- 
+Sign-in
+search for req. items.
+check the reviews
+adding the items to cart
+place my order
+payment
+order is confirmed
+track...
+
+
+Monolith Approach 
+(vs)
+Micro-services 
+
+dev1 -- sign-up service --> 	code/Unit-testing/ & Continuously integrate for further testing(QA)
+								/C-delivery/C-deployment 
+dev2 -- sign-in service -->		code/Unit-testing/ & Continuously integrate for further testing(QA)
+								/C-delivery/C-deployment 
+
+
+
+dev1 -- CR - sign-up service --> 	code	
+									intergate the code for Unit-testing (to next envi.) DEV Envi
+									integrate for further testing(QA)
+									/C-delivery/C-deployment 
+
+C-I
+
+C-Delivery
+
+
+Non-Prod					Prod
+
+DEV ---> QA ---> UAT  (Security Audit) ---> 	Prod 
+
+
+C-Delivery -- need manual approval for prod. deployment
+
+C-Deployment -- It is completely Automated from Dev to PROD
+
+Banking Domain ::: 
+
+periodic sms notifications 
+Create Deployment Windows -- 4hrs - during non-business hours
+ 
+facebook/netflix/google/amazon.... 
+
+
+
+
+People !!!! are the very big Issue in Implementing DevOps.
+Process
+Tools
+
+
+ALM Tool -- Appln. LifeCycle Management Tool -- Jira 
+
+Development --- Visual Studio Code, Eclipse based IDE 
+Source Code --- GIT (VCS)
+CI/CD --- Jenkins, gitlab-ci, bamboo
+Testing --- selenium, junit
+Deployment --- Docker/Kubernetes / Ansible
+monitoring --- Nagios, prometheus , Grafana
+
+
+Now What Next ?????
+
+Environment
+
+Create AWS Free - tier Account...
+
+& Create Linux Virtual Machines 
+
+email-id, phone number , active debit/credit card. 
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``
+
+Version Control System ::: 
+
+Developer -- create a Java Program
+
+VS Code -- create a Java Program eg. hello.java -- index.jsp -  jdk 1.8  --> 1.7
+
+should be tracked and version controlled. 
+
+index.jsp ==> saved v1.0 ---> Integrated to QA 
+index.jsp ==> saved v1.1 ---> Integrated to QA 
+index.jsp ==> saved v1.2 ---> Integrated to QA 
+index.jsp ==> saved v1.3 ---> Integrated to QA  -- to prod 
+index.jsp ==> saved v1.4 ---> Integrated to QA 
+
+
+Version control System --- > GIT
+
+Sharing the source codes to global users or with the team. 
+
+Freelancer - web developer  +3
+Local VCS 
+Using Remote/Global VCS 
+
+
+index.jsp -- added 5 lines of code --- saved --- v1.0
+
+index.jsp -- added 5 more lines of code --- saved --- v1.1
+
+
+
+GIT ::: 
+
+How to install --- >
+
+GIT Workflow: 
+GIT Branching Strategies:
+
+
+
+Summary::
+
+workflow :
+20 files 
+local repository				-- working Dir ==> Staging Area ==> Local repo
+
+remote repository
+	
+git add 
+git commit		jus commit into my local repo
+
+git clone				10 files ++1 
+git pull						
+git fetch
+git push 
+
+git checkout / Merge
+
+DEV-A
+Local Repo 
+Project1 Folder ::::
+
+src code & the project related config files 
+
+
+
+DEV-B
+Local Repo 
+Project2 Folder ::::
+
+src code & the project related config files 
+
+
+pushed dev-b src to remote repo 
+
+git fetch ----- update the local repo -- & pick only the required changes to project folder/WS
+
+git pull  ----- update the local repo as well as project folder/WS
+==fetch + merge 
+
+DEV : A B 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+remote repo::
+
+github --
+
+gitlab
+bitbucket
+azure repo 
+aws commit 
+
+
+
+
+
+
+git 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+dcp-oct15/Day1.txt at main · LoksaiETA/dcp-oct15
